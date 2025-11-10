@@ -561,9 +561,7 @@ class ConfirmModal(tk.Toplevel):
 3. **Email Format**: Must contain '@' and '.'
 4. **Password**: Min 8 characters (recommended)
 5. **Archive Confirmation**: Must type "ARCHIVE" exactly
-
 ## Keyboard Shortcuts
-
 | Key | Action |
 |-----|--------|
 | `Enter` | Confirm modal / Submit form |
