@@ -14,6 +14,7 @@ import { ReportsModule } from './components/modules/ReportsModule';
 import { MaintenanceModule } from './components/modules/MaintenanceModule';
 import { HelpModule } from './components/modules/HelpModule';
 
+
 type ToastType = 'success' | 'error' | 'info';
 type UserRole = 'Admin' | 'Staff';
 
@@ -22,6 +23,7 @@ interface Toast {
   type: ToastType;
   message: string;
 }
+
 
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -38,6 +40,7 @@ export default function App() {
   const removeToast = (id: string) => {
     setToasts(prev => prev.filter(t => t.id !== id));
   };
+
   
   const handleLogin = (role: UserRole) => {
     setUserRole(role);
@@ -64,6 +67,7 @@ export default function App() {
       setActiveModule(module);
     }
   };
+
   
   // Login screen
   if (!isLoggedIn) {
@@ -79,11 +83,13 @@ export default function App() {
           onClose={() => setShowForgotPassword(false)}
           onSuccess={() => addToast('success', 'Password reset successfully.')}
         />
+
         
         <ToastContainer toasts={toasts} removeToast={removeToast} />
       </div>
     );
   }
+
   
   // Main application
   return (
@@ -127,6 +133,8 @@ export default function App() {
           )}
         </main>
       </div>
+
+
       
       <ToastContainer toasts={toasts} removeToast={removeToast} />
     </div>
