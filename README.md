@@ -1,7 +1,13 @@
 
-  # Automated Management System UI
+  # Automated Management System UI #
 
-  This is a code bundle for Automated Management System UI. The original project is available at https://www.figma.com/design/AmYuiPLl5Q7p08p6kPFn68/Automated-Management-System-UI.
+  Automated Management System (Screen Design) for Champion Fine Tooling Corporation
+
+  Proponents:
+              Certeza, Luis Keine C.
+              Igama, Marc Kenzo A.
+              Reyes, Ayzhiedy Jee D.
+
 
   ## Running the code
 
