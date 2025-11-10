@@ -1,0 +1,113 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Champion Fine Tooling Brand Colors */
+  --primary-deep-green: #2C5E2E;
+  --yellow-gold-start: #F5D000;
+  --yellow-gold-end: #FFD74D;
+  --warm-brown-accent: #A25E2D;
+  --off-white-bg: #F8F9FA;
+  --light-gray-border: #E5E7EB;
+  --table-row-alt: #F6F7F8;
+  --error-red: #E02424;
+  --success-green: #2EA44F;
+  --muted-gray: #6B7280;
+  --white: #FFFFFF;
+  --sidebar-gradient-top: #194620;
+  --sidebar-gradient-bottom: #2C5E2E;
+  
+  /* Typography */
+  --font-primary: 'Inter', 'Roboto', sans-serif;
+  
+  /* Spacing & Sizes */
+  --header-height: 64px;
+  --sidebar-width: 260px;
+  --content-padding: 24px;
+  --card-radius: 10px;
+  --form-gap: 12px;
+  --button-height: 36px;
+  --table-row-height: 40px;
+  
+  /* Legacy tokens for compatibility */
+  --font-size: 12px;
+  --background: #F8F9FA;
+  --foreground: #1B1B1B;
+  --card: #ffffff;
+  --card-foreground: #1B1B1B;
+  --border: #E5E7EB;
+  --radius: 10px;
+}
+
+@theme inline {
+  --color-primary-green: var(--primary-deep-green);
+  --color-yellow-start: var(--yellow-gold-start);
+  --color-yellow-end: var(--yellow-gold-end);
+  --color-brown-accent: var(--warm-brown-accent);
+  --color-off-white: var(--off-white-bg);
+  --color-border-gray: var(--light-gray-border);
+  --color-error: var(--error-red);
+  --color-success: var(--success-green);
+  --color-muted: var(--muted-gray);
+}
+
+@layer base {
+  * {
+    @apply outline-none;
+  }
+
+  body {
+    font-family: var(--font-primary);
+    background: var(--off-white-bg);
+    color: #1B1B1B;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+
+/**
+ * Champion Fine Tooling Typography System
+ */
+@layer base {
+  /* Module Title / Headline */
+  .heading-module {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+  
+  /* Section Labels */
+  .label-section {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 13px;
+  }
+  
+  /* Body Text / Inputs */
+  .text-body {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  /* Help Text */
+  .text-help {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--muted-gray);
+  }
+  
+  /* Header Title */
+  .text-header {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+
+html {
+  font-size: 16px;
+}
