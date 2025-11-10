@@ -4,6 +4,6 @@
   Automated Management System (Screen Design) for Champion Fine Tooling Corporation
 
   Proponents:
-              Certeza , Luis Keine C.
+              Certeza, Luis Keine C.
               Igama, Marc Kenzo A.
               Reyes, Ayzhiedy Jee D.
